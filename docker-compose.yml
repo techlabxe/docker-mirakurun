@@ -20,12 +20,11 @@ services:
             - /dev/px4video1:/dev/px4video1
             - /dev/px4video2:/dev/px4video2
             - /dev/px4video3:/dev/px4video3
-        restart: always
         logging:
             driver: json-file
             options:
                 max-file: "1"
                 max-size: 10m
-        user: "1000:1000"
+        restart: always
 
 
